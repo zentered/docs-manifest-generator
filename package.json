@@ -1,0 +1,61 @@
+{
+  "name": "docs-parser",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "parse /docs folders and create manifest.json",
+  "homepage": "https://github.com/zentered/docs-manifest-generator#readme",
+  "bugs": {
+    "url": "https://github.com/zentered/docs-manifest-generator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zentered/docs-manifest-generator.git"
+  },
+  "license": "MIT",
+  "author": "Zentered <hi@zentered.co> (https://zentered.co)",
+  "contributors": [
+    "Patrick Heneise (https://github.com/patrickheneise)"
+  ],
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{mjs,js,json,md,yml}": [
+      "prettier --write"
+    ],
+    "*.{mjs,js}": [
+      "eslint --cache --fix"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^16.0.0",
+    "commitlint": "^16.1.0",
+    "eslint": "^8.7.0",
+    "eslint-plugin-node": "^11.1.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.1"
+  },
+  "engines": {
+    "node": "^12||^16"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "dependencies": {
+    "dree": "^3.3.3",
+    "gray-matter": "^4.0.3",
+    "lodash": "^4.17.21",
+    "prettier": "^2.5.1",
+    "remove-markdown": "^0.3.0"
+  }
+}
