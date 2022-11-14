@@ -36,12 +36,12 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^16.0.0",
-    "commitlint": "^16.1.0",
-    "eslint": "^8.7.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "commitlint": "^17.2.0",
+    "eslint": "^8.27.0",
     "eslint-plugin-node": "^11.1.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.1"
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3"
   },
   "engines": {
     "node": "^12||^16"
@@ -52,10 +52,10 @@
     ]
   },
   "dependencies": {
-    "dree": "^3.3.3",
+    "dree": "^3.4.2",
     "gray-matter": "^4.0.3",
     "lodash": "^4.17.21",
-    "prettier": "^2.5.1",
-    "remove-markdown": "^0.3.0"
+    "prettier": "^2.7.1",
+    "remove-markdown": "^0.5.0"
   }
 }
